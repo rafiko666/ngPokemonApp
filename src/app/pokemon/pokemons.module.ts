@@ -5,14 +5,19 @@ import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.componen
 import { BorderCardDirective } from '../shared/directives/border-card.directive';
 import { PokemonTypeColorPipe } from '../shared/pipes/pokemon-type-color.pipe';
 import { RouterModule } from '@angular/router';
+import { PokemonFormComponent } from './pokemon-form/pokemon-form.component';
+import { FormsModule } from '@angular/forms';
+import { PokemonEditComponent } from './pokemon-edit/pokemon-edit.component';
 
 
 
 @NgModule({
   declarations: [ListPokemonComponent, DetailPokemonComponent, BorderCardDirective,
-    PokemonTypeColorPipe],
+    PokemonTypeColorPipe,
+    PokemonFormComponent,
+    PokemonEditComponent],
   imports: [
-    CommonModule, RouterModule
+    CommonModule, RouterModule, FormsModule
   ]
 })
 export class PokemonsModule { }

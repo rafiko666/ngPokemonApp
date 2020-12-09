@@ -17,4 +17,8 @@ export class PokemonsService {
     const pokemons = this.getListPokemons();
     return pokemons.find((pok) => pok.id === Number(id))
   }
+
+  getPokemonTypes() {
+    return ['Feu', 'Eau', 'Plante', 'Insecte', 'Normal', 'Vol', 'Poison', 'Fée', 'Psy', 'Electrik', 'Combat']
+  }
 }
